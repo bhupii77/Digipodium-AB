@@ -20,6 +20,7 @@ class Product (Base):
     price  = Column (String(255))
     url = Column (String(255))
     imgurl = Column (String(255))
+    created_at= Column(DateTime ,default=datetime.now() )
 
     def __str__(self):
         return self.title
